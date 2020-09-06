@@ -1,0 +1,7 @@
+{
+  "name": "football",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

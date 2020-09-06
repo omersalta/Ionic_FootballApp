@@ -1,0 +1,28 @@
+<ion-list>
+  <ion-list-header>Objects as Values (compareWith)</ion-list-header>
+  <form (ngSubmit)="login()" name="form1" ></form>
+  <ion-item>
+    <ion-label>Team name</ion-label>
+    <ion-select [compareWith] ="compareWith">
+      <ion-select-option name ="set1" *ngFor="let TeamName of TeamNames">{{TeamName}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Other team name</ion-label>
+      <ion-select [compareWith] ="compareWith">
+        <ion-select-option name ="set2" *ngFor="let TeamName of TeamNames">{{TeamName}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+  <ion-item>
+    <ion-label>Chose a Statistics</ion-label>
+    <ion-select [compareWith] ="compareWith">
+      <ion-select-option name ="set3" *ngFor="let TeamName of TeamNames">{{TeamName}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button (click)="loadStat" >click </ion-button>
+</ion-list>
+</ion-list>

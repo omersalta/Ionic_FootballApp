@@ -1,0 +1,1800 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Previus Games</ion-title>
+    
+      <ion-button type="bounded" (click)="Back()">
+         <ion-icon slot="start"></ion-icon><-games of week
+     </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" offset="0">
+              <ion-text color="primary">
+                <h2>-HOME-</h2>
+              </ion-text>
+         
+        </ion-col>
+        <ion-col>
+            <ion-text color="primary">
+                <h2>-AWAY-</h2>
+              </ion-text>
+        </ion-col>
+        <ion-col size="4" offset="0">
+            <ion-text color="danger">
+              <h2>-HOME-</h2>
+            </ion-text>
+       
+      </ion-col>
+      <ion-col>
+          <ion-text color="danger">
+              <h2>-AWAY-</h2>
+            </ion-text>
+      </ion-col>
+        
+
+        
+      </ion-row>
+
+
+
+
+      <ion-row>
+
+
+        <ion-col size="2" offset="0">
+          {{home_prev_matches[0].home_team}}     
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[0]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[0]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[0].away_team}}
+        </ion-col>
+
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[0].home_team}}
+          </ion-col>
+  
+  
+          <ion-row>
+              <ion-col size="7">
+                  {{away_team_half_scores[0]}}
+              </ion-col>
+              <ion-col size="6">
+                  {{away_team_second_scores[0]}}
+              </ion-col>
+          </ion-row>
+          
+  
+          <ion-col size="2" offset="1">
+              {{away_prev_matches[0].away_team}}
+          </ion-col>
+
+      </ion-row> 
+      <br>
+
+
+
+      <ion-row>
+
+
+          <ion-col size="2" offset="0">
+            {{home_prev_matches[1].home_team}}
+          </ion-col>
+  
+  
+          <ion-row>
+              <ion-col size="7">
+                  {{home_team_half_scores[1]}}
+              </ion-col>
+              <ion-col size="7">
+                  {{home_team_second_scores[1]}}
+              </ion-col>
+          </ion-row>
+          
+  
+          <ion-col size="2" offset="1">
+              {{home_prev_matches[1].away_team}}
+          </ion-col>
+          <ion-col size="2" offset="0">
+              {{away_prev_matches[1].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[1]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[1]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[1].away_team}}
+            </ion-col>
+  
+  
+        </ion-row> 
+        <br>
+
+
+
+
+
+
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+            {{home_prev_matches[2].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[2]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[2]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[2].away_team}}
+        </ion-col>
+
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[2].home_team}}
+            </ion-col>
+
+
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[2]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[2]}}
+                </ion-col>
+            </ion-row>
+            
+
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[2].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+
+        
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+            {{home_prev_matches[3].home_team}}
+            </ion-col>
+
+
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[3]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[3]}}
+                </ion-col>
+            </ion-row>
+            
+
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[3].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[3].home_team}}
+            </ion-col>
+
+
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[3]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[3]}}
+                </ion-col>
+            </ion-row>
+            
+
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[3].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+        
+            
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+                {{home_prev_matches[4].home_team}}
+            </ion-col>
+
+
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[4]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[4]}}
+                </ion-col>
+            </ion-row>
+            
+
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[4].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[4].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[4]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[4]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[4].away_team}}
+                </ion-col>
+
+
+            </ion-row> 
+            <br>
+    
+            
+               
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+        {{home_prev_matches[5].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[5]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[5]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[5].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[5].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{away_team_half_scores[5]}}
+            </ion-col>
+            <ion-col size="6">
+                {{away_team_second_scores[5]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{away_prev_matches[5].away_team}}
+        </ion-col>
+
+
+    </ion-row> 
+    <br>
+
+    
+        
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+            {{home_prev_matches[6].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[6]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[6]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[6].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[6].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[6]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[6]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[6].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+    
+        
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+            {{home_prev_matches[7].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[7]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[7]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[7].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[7].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[7]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[7]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[7].away_team}}
+            </ion-col>
+    
+    
+        </ion-row> 
+        <br>
+          
+                  
+                     
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+            {{home_prev_matches[8].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[8]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[8]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[8].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[8].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[8]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[8]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[8].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+    
+        
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+            {{home_prev_matches[9].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[9]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[9]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[9].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[9].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[9]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[9]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[9].away_team}}
+            </ion-col>
+    
+    
+        </ion-row> 
+        <br>
+
+        
+            
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+                {{home_prev_matches[10].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[10]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[10]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[10].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[10].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[10]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[10]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[10].away_team}}
+                </ion-col>
+    
+    
+            </ion-row> 
+            <br>
+
+        
+            
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                {{home_prev_matches[11].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[11]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[11]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[11].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[11].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[11]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[11]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[11].away_team}}
+                </ion-col>
+        
+        
+            </ion-row> 
+            <br>
+    
+            
+                
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                    {{home_prev_matches[12].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[12]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[12]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[12].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[12].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[12]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[12]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[12].away_team}}
+                    </ion-col>
+        
+        
+                </ion-row> 
+                <br>
+    
+            
+                
+                <ion-row>
+
+
+                    <ion-col size="2" offset="0">
+                    {{home_prev_matches[13].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{home_team_half_scores[13]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{home_team_second_scores[13]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{home_prev_matches[13].away_team}}
+                    </ion-col>
+                    <ion-col size="2" offset="0">
+                        {{away_prev_matches[13].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[13]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[13]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[13].away_team}}
+                    </ion-col>
+            
+            
+                </ion-row> 
+                <br>
+                      
+                              
+                                 
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+            {{home_prev_matches[14].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[14]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[14]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[14].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[14].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[14]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[14]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[14].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+    
+        
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+            {{home_prev_matches[15].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[15]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[15]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[15].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[15].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[15]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[15]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[15].away_team}}
+            </ion-col>
+    
+    
+        </ion-row> 
+        <br>
+
+        
+            
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+                {{home_prev_matches[16].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[16]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[16]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[16].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[16].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[16]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[16]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[16].away_team}}
+                </ion-col>
+    
+    
+            </ion-row> 
+            <br>
+
+        
+            
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                {{home_prev_matches[17].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[17]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[17]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[17].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[17].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[17]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[17]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[17].away_team}}
+                </ion-col>
+        
+        
+            </ion-row> 
+            <br>
+    
+            
+                
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                    {{home_prev_matches[18].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[18]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[18]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[18].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[18].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[18]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[18]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[18].away_team}}
+                    </ion-col>
+        
+        
+                </ion-row> 
+                <br>
+    
+            
+                
+                <ion-row>
+
+
+                    <ion-col size="2" offset="0">
+                    {{home_prev_matches[19].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{home_team_half_scores[19]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{home_team_second_scores[19]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{home_prev_matches[19].away_team}}
+                    </ion-col>
+                    <ion-col size="2" offset="0">
+                        {{away_prev_matches[19].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[19]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[19]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[19].away_team}}
+                    </ion-col>
+            
+            
+                </ion-row> 
+                <br>
+                                  
+                                          
+                                             
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+            {{home_prev_matches[20].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[20]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[20]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[20].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[20].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[20]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[20]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[20].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+    
+        
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+            {{home_prev_matches[21].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[21]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[21]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[21].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[21].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[21]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[21]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[21].away_team}}
+            </ion-col>
+    
+    
+        </ion-row> 
+        <br>
+
+        
+            
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+                {{home_prev_matches[22].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[22]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[22]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[22].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[22].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[22]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[22]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[22].away_team}}
+                </ion-col>
+    
+    
+            </ion-row> 
+            <br>
+
+        
+            
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                {{home_prev_matches[23].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[23]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[23]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[23].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[23].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[23]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[23]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[23].away_team}}
+                </ion-col>
+        
+        
+            </ion-row> 
+            <br>
+    
+            
+                
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                    {{home_prev_matches[24].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[24]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[24]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[24].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[24].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[24]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[24]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[24].away_team}}
+                    </ion-col>
+        
+        
+                </ion-row> 
+                <br>
+    
+            
+                
+                <ion-row>
+
+
+                    <ion-col size="2" offset="0">
+                    {{home_prev_matches[25].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{home_team_half_scores[25]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{home_team_second_scores[25]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{home_prev_matches[25].away_team}}
+                    </ion-col>
+                    <ion-col size="2" offset="0">
+                        {{away_prev_matches[25].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[25]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[25]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[25].away_team}}
+                    </ion-col>
+            
+            
+                </ion-row> 
+                <br>
+                                              
+                                                      
+                                                         
+    <ion-row>
+
+
+    <ion-col size="2" offset="0">
+        {{home_prev_matches[26].home_team}}
+    </ion-col>
+
+
+    <ion-row>
+        <ion-col size="7">
+            {{home_team_half_scores[26]}}
+        </ion-col>
+        <ion-col size="6">
+            {{home_team_second_scores[26]}}
+        </ion-col>
+    </ion-row>
+    
+
+    <ion-col size="2" offset="1">
+        {{home_prev_matches[26].away_team}}
+    </ion-col>
+    <ion-col size="2" offset="0">
+        {{away_prev_matches[26].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{away_team_half_scores[26]}}
+            </ion-col>
+            <ion-col size="6">
+                {{away_team_second_scores[26]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{away_prev_matches[26].away_team}}
+        </ion-col>
+
+
+    </ion-row> 
+    <br>
+
+
+    
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+        {{home_prev_matches[27].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[27]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[27]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[27].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[27].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{away_team_half_scores[27]}}
+            </ion-col>
+            <ion-col size="6">
+                {{away_team_second_scores[27]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{away_prev_matches[27].away_team}}
+        </ion-col>
+
+
+    </ion-row> 
+    <br>
+
+    
+        
+    <ion-row>
+
+
+        <ion-col size="2" offset="0">
+            {{home_prev_matches[28].home_team}}
+        </ion-col>
+
+
+        <ion-row>
+            <ion-col size="7">
+                {{home_team_half_scores[28]}}
+            </ion-col>
+            <ion-col size="6">
+                {{home_team_second_scores[28]}}
+            </ion-col>
+        </ion-row>
+        
+
+        <ion-col size="2" offset="1">
+            {{home_prev_matches[28].away_team}}
+        </ion-col>
+        <ion-col size="2" offset="0">
+            {{away_prev_matches[28].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[28]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[28]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[28].away_team}}
+            </ion-col>
+
+
+        </ion-row> 
+        <br>
+
+    
+        
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+            {{home_prev_matches[29].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[29]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[29]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[29].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[29].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{away_team_half_scores[29]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{away_team_second_scores[29]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{away_prev_matches[29].away_team}}
+            </ion-col>
+    
+    
+        </ion-row> 
+        <br>
+
+        
+            
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+                {{home_prev_matches[30].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[30]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[30]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[30].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[30].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[30]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[30]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[30].away_team}}
+                </ion-col>
+    
+    
+            </ion-row> 
+            <br>
+
+        
+            
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                {{home_prev_matches[31].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[31]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[31]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[31].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[31].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[31]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[31]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[31].away_team}}
+                </ion-col>
+        
+        
+            </ion-row> 
+            <br>
+    
+            
+                
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                    {{home_prev_matches[32].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[32]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[32]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[32].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[32].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[32]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[32]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[32].away_team}}
+                    </ion-col>
+        
+        
+                </ion-row> 
+                <br>
+    
+            
+                
+                <ion-row>
+
+
+                    <ion-col size="2" offset="0">
+                    {{home_prev_matches[33].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{home_team_half_scores[33]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{home_team_second_scores[33]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{home_prev_matches[33].away_team}}
+                    </ion-col>
+                    <ion-col size="2" offset="0">
+                        {{away_prev_matches[33].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[33]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[33]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[33].away_team}}
+                    </ion-col>
+            
+            
+                </ion-row> 
+                <br>
+                                                              
+                                                                      
+                                                                         
+        <ion-row>
+
+
+            <ion-col size="2" offset="0">
+                {{home_prev_matches[34].home_team}}
+            </ion-col>
+    
+    
+            <ion-row>
+                <ion-col size="7">
+                    {{home_team_half_scores[34]}}
+                </ion-col>
+                <ion-col size="6">
+                    {{home_team_second_scores[34]}}
+                </ion-col>
+            </ion-row>
+            
+    
+            <ion-col size="2" offset="1">
+                {{home_prev_matches[34].away_team}}
+            </ion-col>
+            <ion-col size="2" offset="0">
+                {{away_prev_matches[34].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[34]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[34]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[34].away_team}}
+                </ion-col>
+    
+    
+            </ion-row> 
+            <br>
+
+        
+            
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                {{home_prev_matches[35].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[35]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[35]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[35].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[35].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{away_team_half_scores[35]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{away_team_second_scores[35]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{away_prev_matches[35].away_team}}
+                </ion-col>
+        
+        
+            </ion-row> 
+            <br>
+    
+            
+                
+            <ion-row>
+
+
+                <ion-col size="2" offset="0">
+                    {{home_prev_matches[36].home_team}}
+                </ion-col>
+        
+        
+                <ion-row>
+                    <ion-col size="7">
+                        {{home_team_half_scores[36]}}
+                    </ion-col>
+                    <ion-col size="6">
+                        {{home_team_second_scores[36]}}
+                    </ion-col>
+                </ion-row>
+                
+        
+                <ion-col size="2" offset="1">
+                    {{home_prev_matches[36].away_team}}
+                </ion-col>
+                <ion-col size="2" offset="0">
+                    {{away_prev_matches[36].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[36]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[36]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[36].away_team}}
+                    </ion-col>
+        
+        
+                </ion-row> 
+                <br>
+    
+            
+                
+                <ion-row>
+
+
+                    <ion-col size="2" offset="0">
+                    {{home_prev_matches[37].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{home_team_half_scores[37]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{home_team_second_scores[37]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{home_prev_matches[37].away_team}}
+                    </ion-col>
+                    <ion-col size="2" offset="0">
+                        {{away_prev_matches[37].home_team}}
+                    </ion-col>
+            
+            
+                    <ion-row>
+                        <ion-col size="7">
+                            {{away_team_half_scores[37]}}
+                        </ion-col>
+                        <ion-col size="6">
+                            {{away_team_second_scores[37]}}
+                        </ion-col>
+                    </ion-row>
+                    
+            
+                    <ion-col size="2" offset="1">
+                        {{away_prev_matches[37].away_team}}
+                    </ion-col>
+            
+            
+                </ion-row> 
+                <br>
+                                                                      
+
+
+
+
+    </ion-grid>
+</ion-content>

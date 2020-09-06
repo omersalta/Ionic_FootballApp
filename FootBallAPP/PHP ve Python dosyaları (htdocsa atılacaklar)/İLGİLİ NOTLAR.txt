@@ -1,0 +1,16 @@
+
+
+PHP dosyalarý:
+
+Create acount php dosyasý gönderilen deðerleri sql de users tablosuna ekler.
+home_stats php dosyasý gönderilern takým isimlerinin averaj ve standart sapma deðerlerini gönderir.
+last_week sqlden son hafat oynayacak takým isimlerini alýr.
+login php bütün kullanýcý bilgilerini döndürür.
+
+
+Python dosyalarý:
+
+last_week_crawling son hafta yapýlacak maçlarý siteden sqle çeker
+stat_crawling takýmlarýn iç saha ve dýþ saha genel verilerini çeker
+web_crawling tüm takýmlarýn maç fikstürlerini kendiþ adlarýndaki tablolara kaydeder
+

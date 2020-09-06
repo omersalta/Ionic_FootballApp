@@ -1,0 +1,51 @@
+<ion-content class="login-content" padding>
+  <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img src="https://img.icons8.com/color/420/the-premier-league.png"/>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box">
+    <form (ngSubmit)="login()" name="form1" >
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item color="favorite">
+              <ion-label lines = "full" color="primary">
+                <ion-item>
+                  <ion-input placeholder="Example@hotmail.com" name="email" ></ion-input>
+                </ion-item>
+                
+                <ion-item >
+                  <ion-input placeholder="Password" name ="password" ></ion-input>
+                </ion-item>
+              </ion-label>
+            </ion-item>
+          
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col>
+            
+          <ion-button size="large" shape="round" color = "favorite2"  (click)="loginAccount()">login
+            
+          </ion-button>
+          <br>
+          <br>
+          
+          
+          <ion-button size ="small" color = "favorite" shape="round" (click)="createAccount()">Create Acount
+              
+            </ion-button>
+            <ion-button size ="small" color = "favorite" shape="round" (click)="gostat()">go stat
+            </ion-button>
+            
+        </ion-col>
+      </ion-row>
+    
+    </form>
+  </div>
+</ion-content>

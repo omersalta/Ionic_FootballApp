@@ -1,0 +1,390 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-row >
+          <ion-col  size="7" size-lg offset="0" >
+                <ion-text color="favorite">
+                  <h1>GAME OF THE WEEK</h1>
+                </ion-text>
+          </ion-col>
+          <ion-col  size="3" size-lg offset="2">
+              <ion-button  color ="favorite2" (click)="Logout()"> Logout </ion-button>
+        </ion-col>
+        
+    
+      </ion-row>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" >
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg offset="2" size="4">
+            <ion-text color="favorite">
+              <h2>HOME</h2>
+            </ion-text>
+       
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+          <ion-text color="favorite2">
+              <h2>AWAY</h2>
+            </ion-text>
+      </ion-col>
+      
+    </ion-row>
+
+    <br>
+    
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[0]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[0]}}
+      </ion-col>
+    </ion-row>
+  
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[0] | number }} ± {{homeTeamSTD_0[0] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[0] | number}} ± {{awayTeamSTD_0[0] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[0] | number }} ± {{homeTeamSTD_1[0] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[0] | number}} ± {{awayTeamSTD_1[9] | number}}
+      </ion-col>
+    </ion-row>
+
+      <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite" (click)="Previous(0)"> Previous Games </ion-button>
+      </ion-col>
+
+
+
+    <br>
+    <br>
+    <ion-row align-items-center>
+        <ion-col size-lg offset="2" size="4">
+          {{homeTeams[1]}}
+        </ion-col>
+        <ion-col size-lg offset="2" size="4">
+          {{awayTeams[1]}}
+        </ion-col>
+      </ion-row>
+    
+      <ion-row align-items-center>
+        <ion-col size-lg offset="2" size="4">
+           {{homeTeamEstHScore[1] | number }} ± {{homeTeamSTD_0[1] | number}}
+        </ion-col>
+        <ion-col size-lg offset="2" size="4">
+          {{awayTeamEstHScore[1] | number}} ± {{awayTeamSTD_0[1] | number}}
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col size-lg offset="2" size="4">
+           {{homeTeamEstSScore[1] | number }} ± {{homeTeamSTD_1[1] | number}}
+        </ion-col>
+        <ion-col size-lg offset="2" size="4">
+          {{awayTeamEstSScore[1] | number}} ± {{awayTeamSTD_1[1] | number}}
+        </ion-col>
+      </ion-row>
+  
+        <ion-col size-lg offset="2" size="4">
+          <ion-button shape="round" color ="favorite2" (click)="Previous(1)"> Previous Games </ion-button>
+        </ion-col>
+
+    <br>
+    <br>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[2]}} 
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[2]}}
+      </ion-col>
+      
+    </ion-row>
+  
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[2] | number }} ± {{homeTeamSTD_0[2] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[2] | number}} ± {{awayTeamSTD_0[2] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[2] | number }} ± {{homeTeamSTD_1[2] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[2] | number}} ± {{awayTeamSTD_1[2] | number}}
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite" (click)="Previous(2)"> Previous Games </ion-button>
+      </ion-col>
+    <br>
+    <br>
+      <ion-row align-items-center>
+       <ion-col size-lg offset="2" size="4">
+        {{homeTeams[3]}}
+       </ion-col>
+      
+       <ion-col size-lg offset="2" size="4">
+        {{awayTeams[3]}}
+       </ion-col>
+
+      
+      </ion-row>
+    
+      
+  
+      <ion-row align-items-center>
+        <ion-col size-lg offset="2" size="4">
+           {{homeTeamEstHScore[3] | number }} ± {{homeTeamSTD_0[3] | number}}
+        </ion-col>
+        <ion-col size-lg offset="2" size="4">
+          {{awayTeamEstHScore[3] | number}} ± {{awayTeamSTD_0[3] | number}}
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col size-lg offset="2" size="4">
+           {{homeTeamEstSScore[3] | number }} ± {{homeTeamSTD_1[3] | number}}
+        </ion-col>
+        <ion-col size-lg offset="2" size="4">
+          {{awayTeamEstSScore[3] | number}} ± {{awayTeamSTD_1[3] | number}}
+        </ion-col>
+      </ion-row>
+
+
+    <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite2" (click)="Previous(3)"> Previous Games </ion-button>
+       </ion-col>
+    <br>
+    <br>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[4]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[4]}}
+      </ion-col>
+    </ion-row>
+  
+
+
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[4] | number }} ± {{homeTeamSTD_0[4] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[4] | number}} ± {{awayTeamSTD_0[4] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[4] | number }} ± {{homeTeamSTD_1[4] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[4] | number}} ± {{awayTeamSTD_1[4] | number}}
+      </ion-col>
+    </ion-row>
+
+      
+    <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite" (click)="Previous(4)"> Previous Games </ion-button>
+      </ion-col>
+    <br>
+    <br>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[5]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[5]}}
+      </ion-col>
+    </ion-row>
+  
+
+
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[5] | number }} ± {{homeTeamSTD_0[5] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[5] | number}} ± {{awayTeamSTD_0[5] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[5] | number }} ± {{homeTeamSTD_1[5] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[5] | number}} ± {{awayTeamSTD_1[5] | number}}
+      </ion-col>
+    </ion-row>
+
+
+    <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite2" (click)="Previous(5)"> Previous Games </ion-button>
+      </ion-col>
+    <br>
+    <br>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[6]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[6]}}
+      </ion-col>
+
+      
+    </ion-row>
+  
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[6] | number }} ± {{homeTeamSTD_0[6] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[6] | number}} ± {{awayTeamSTD_0[6] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[6] | number }} ± {{homeTeamSTD_1[6] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[6] | number}} ± {{awayTeamSTD_1[6] | number}}
+      </ion-col>
+    </ion-row>
+
+
+      <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite" (click)="Previous(6)"> Previous Games </ion-button>
+      </ion-col>
+    <br>
+    <br>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[7]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[7]}}
+      </ion-col>
+
+      
+    </ion-row>
+    
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[7] | number }} ± {{homeTeamSTD_0[7] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[7] | number}} ± {{awayTeamSTD_0[7] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[7] | number }} ± {{homeTeamSTD_1[7] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[7] | number}} ± {{awayTeamSTD_1[7] | number}}
+      </ion-col>
+    </ion-row>
+
+
+    <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite2" (click)="Previous(7)"> Previous Games </ion-button>
+      </ion-col>
+    <br>
+    <br>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[8]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[8]}}
+      </ion-col>
+
+      
+    </ion-row>
+  
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[8] | number }} ± {{homeTeamSTD_0[8] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[8] | number}} ± {{awayTeamSTD_0[8] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstSScore[8] | number }} ± {{homeTeamSTD_1[8] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[8] | number}} ± {{awayTeamSTD_1[8] | number}}
+      </ion-col>
+    </ion-row>
+
+
+    <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite" (click)="Previous(8)"> Previous Games </ion-button>
+      </ion-col>
+    <br>
+    <br>
+
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeams[9]}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeams[9]}}
+      </ion-col>
+
+     
+    </ion-row>
+  
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+         {{homeTeamEstHScore[9] | number }} ± {{homeTeamSTD_0[9] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstHScore[9] | number}} ± {{awayTeamSTD_0[9] | number}}
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col size-lg offset="2" size="4">
+        {{homeTeamEstSScore[9] | number }} ± {{homeTeamSTD_1[9] | number}}
+      </ion-col>
+      <ion-col size-lg offset="2" size="4">
+        {{awayTeamEstSScore[9] | number}} ± {{awayTeamSTD_1[9] | number}}
+      </ion-col>
+    </ion-row>
+
+
+
+      <ion-col size-lg offset="2" size="4">
+        <ion-button shape="round" color ="favorite2" (click)="Previous(9)"> Previous Games </ion-button>
+      </ion-col>
+      <br>
+      <br>
+    
+      
+
+
+
+  </ion-grid>
+
+</ion-content>
